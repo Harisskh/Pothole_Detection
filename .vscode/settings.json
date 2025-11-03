@@ -1,0 +1,7 @@
+{
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda",
+  "python-envs.pythonProjects": [],
+  "python.defaultInterpreterPath": "C:\\Users\\Naufal Harisa\\.conda\\envs\\multimedia_env\\python.exe",
+  "python.terminal.activateEnvironment": true
+}

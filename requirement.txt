@@ -1,0 +1,15 @@
+# Core Image Processing
+opencv-python==4.8.1.78
+numpy==1.24.3
+
+# GUI Framework
+streamlit==1.28.1
+
+# Image Handling
+Pillow==10.1.0
+
+# Progress Bar & Utilities
+tqdm==4.66.1
+
+# Optional: For better visualization
+matplotlib==3.8.0
