@@ -1,0 +1,186 @@
+============================================================
+VIDEO POTHOLE DETECTION SUMMARY
+============================================================
+
+Video: dataset/video.mp4
+Duration: 3.4 seconds
+Resolution: 464×832
+FPS: 59
+
+Frames analyzed: 4
+Sampling rate: 1 fps
+Raw detections: 37
+Unique potholes: 21
+
+============================================================
+DETAILED RESULTS
+============================================================
+
+Pothole #1:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 0 (t=0.0s)
+   Appeared in: 3 frames
+   Position: (295, 465)
+   Size: 18×15 pixels
+   Snapshot: output_video\snapshots\pothole_01.jpg
+
+Pothole #2:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 0 (t=0.0s)
+   Appeared in: 1 frames
+   Position: (353, 455)
+   Size: 21×18 pixels
+   Snapshot: output_video\snapshots\pothole_02.jpg
+
+Pothole #3:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 0 (t=0.0s)
+   Appeared in: 3 frames
+   Position: (532, 454)
+   Size: 18×26 pixels
+   Snapshot: output_video\snapshots\pothole_03.jpg
+
+Pothole #4:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 0 (t=0.0s)
+   Appeared in: 3 frames
+   Position: (233, 417)
+   Size: 15×26 pixels
+   Snapshot: output_video\snapshots\pothole_04.jpg
+
+Pothole #5:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 0 (t=0.0s)
+   Appeared in: 1 frames
+   Position: (296, 404)
+   Size: 23×28 pixels
+   Snapshot: output_video\snapshots\pothole_05.jpg
+
+Pothole #6:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 0 (t=0.0s)
+   Appeared in: 1 frames
+   Position: (0, 382)
+   Size: 15×18 pixels
+   Snapshot: output_video\snapshots\pothole_06.jpg
+
+Pothole #7:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 1 (t=1.0s)
+   Appeared in: 4 frames
+   Position: (425, 373)
+   Size: 20×29 pixels
+   Snapshot: output_video\snapshots\pothole_07.jpg
+
+Pothole #8:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 1 (t=1.0s)
+   Appeared in: 2 frames
+   Position: (99, 371)
+   Size: 19×15 pixels
+   Snapshot: output_video\snapshots\pothole_08.jpg
+
+Pothole #9:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 0 (t=0.0s)
+   Appeared in: 1 frames
+   Position: (336, 311)
+   Size: 15×16 pixels
+   Snapshot: output_video\snapshots\pothole_09.jpg
+
+Pothole #10:
+   First seen: Frame 0 (t=0.0s)
+   Last seen: Frame 0 (t=0.0s)
+   Appeared in: 1 frames
+   Position: (85, 234)
+   Size: 15×19 pixels
+   Snapshot: output_video\snapshots\pothole_10.jpg
+
+Pothole #11:
+   First seen: Frame 1 (t=1.0s)
+   Last seen: Frame 2 (t=2.0s)
+   Appeared in: 3 frames
+   Position: (620, 439)
+   Size: 20×17 pixels
+   Snapshot: output_video\snapshots\pothole_11.jpg
+
+Pothole #12:
+   First seen: Frame 1 (t=1.0s)
+   Last seen: Frame 3 (t=3.0s)
+   Appeared in: 3 frames
+   Position: (583, 358)
+   Size: 27×18 pixels
+   Snapshot: output_video\snapshots\pothole_12.jpg
+
+Pothole #13:
+   First seen: Frame 1 (t=1.0s)
+   Last seen: Frame 1 (t=1.0s)
+   Appeared in: 1 frames
+   Position: (270, 336)
+   Size: 40×15 pixels
+   Snapshot: output_video\snapshots\pothole_13.jpg
+
+Pothole #14:
+   First seen: Frame 1 (t=1.0s)
+   Last seen: Frame 2 (t=2.0s)
+   Appeared in: 2 frames
+   Position: (1, 0)
+   Size: 86×29 pixels
+   Snapshot: output_video\snapshots\pothole_14.jpg
+
+Pothole #15:
+   First seen: Frame 2 (t=2.0s)
+   Last seen: Frame 2 (t=2.0s)
+   Appeared in: 1 frames
+   Position: (101, 294)
+   Size: 16×16 pixels
+   Snapshot: output_video\snapshots\pothole_15.jpg
+
+Pothole #16:
+   First seen: Frame 2 (t=2.0s)
+   Last seen: Frame 2 (t=2.0s)
+   Appeared in: 1 frames
+   Position: (544, 63)
+   Size: 56×19 pixels
+   Snapshot: output_video\snapshots\pothole_16.jpg
+
+Pothole #17:
+   First seen: Frame 2 (t=2.0s)
+   Last seen: Frame 2 (t=2.0s)
+   Appeared in: 1 frames
+   Position: (0, 55)
+   Size: 23×15 pixels
+   Snapshot: output_video\snapshots\pothole_17.jpg
+
+Pothole #18:
+   First seen: Frame 2 (t=2.0s)
+   Last seen: Frame 3 (t=3.0s)
+   Appeared in: 2 frames
+   Position: (292, 52)
+   Size: 43×15 pixels
+   Snapshot: output_video\snapshots\pothole_18.jpg
+
+Pothole #19:
+   First seen: Frame 2 (t=2.0s)
+   Last seen: Frame 2 (t=2.0s)
+   Appeared in: 1 frames
+   Position: (91, 4)
+   Size: 46×29 pixels
+   Snapshot: output_video\snapshots\pothole_19.jpg
+
+Pothole #20:
+   First seen: Frame 3 (t=3.0s)
+   Last seen: Frame 3 (t=3.0s)
+   Appeared in: 1 frames
+   Position: (0, 460)
+   Size: 39×20 pixels
+   Snapshot: output_video\snapshots\pothole_20.jpg
+
+Pothole #21:
+   First seen: Frame 3 (t=3.0s)
+   Last seen: Frame 3 (t=3.0s)
+   Appeared in: 1 frames
+   Position: (379, 0)
+   Size: 57×29 pixels
+   Snapshot: output_video\snapshots\pothole_21.jpg
+
