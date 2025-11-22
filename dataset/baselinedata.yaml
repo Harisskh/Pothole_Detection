@@ -1,0 +1,10 @@
+# Dataset paths
+train: dataset\train\images
+val: dataset\valid\images
+test: dataset\test\images
+
+# Number of classes
+nc: 1
+
+# Class names
+names: ['pothole']

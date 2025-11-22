@@ -1,0 +1,7 @@
+dataset/test
+dataset/train
+dataset/valid
+dataset/data.yaml
+
+pothole_augmented
+pothole_preprocessed
