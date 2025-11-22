@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Pothole - v1 raw']
+
+roboflow:
+  workspace: pothole-detection-ur7uu
+  project: pothole-detection-gv5e7-uv6i4
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/pothole-detection-ur7uu/pothole-detection-gv5e7-uv6i4/dataset/1

@@ -1,0 +1,7 @@
+path: d:\kuliah\smt 7\PCD\Pothole_Detection\pothole_augmented
+train: train/images
+val: valid/images
+test: test/images
+nc: 1
+names:
+- pothole
