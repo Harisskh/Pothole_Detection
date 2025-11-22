@@ -1,12 +1,3 @@
-"""
-SISTEM DETEKSI LUBANG JALAN
-============================
-Aplikasi GUI untuk deteksi lubang jalan menggunakan YOLO
-
-Cara menjalankan:
-    streamlit run app.py
-"""
-
 import streamlit as st
 import cv2
 from PIL import Image
