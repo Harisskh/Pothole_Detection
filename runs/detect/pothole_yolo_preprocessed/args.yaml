@@ -10,7 +10,7 @@ imgsz: 640
 save: true
 save_period: 10
 cache: false
-device: cpu
+device: '0'
 workers: 8
 project: runs/detect
 name: pothole_yolo_preprocessed
@@ -103,4 +103,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: D:\Semester 7\Tubes_PCD\runs\detect\pothole_yolo_preprocessed
+save_dir: D:\Semester 7\Tubes_PCD\Pothole_Detection\runs\detect\pothole_yolo_preprocessed
