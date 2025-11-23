@@ -1,0 +1,30 @@
+================================================================================
+POTHOLE DETECTION - YOLO WITH PREPROCESSING
+================================================================================
+
+PREPROCESSING APPLIED (3 Konsep PCD):
+--------------------------------------------------------------------------------
+1. Image Enhancement: CLAHE
+2. Noise Reduction: Bilateral Filter
+3. Data Augmentation: Geometric + Photometric
+
+DATASET:
+--------------------------------------------------------------------------------
+Original:  665 images
+Augmented: 2060 images
+Increase:  +1395 images
+
+TRAINING CONFIG:
+--------------------------------------------------------------------------------
+Model:      YOLOv8-nano
+Epochs:     50
+Batch Size: 4
+Image Size: 640
+
+TEST SET METRICS:
+--------------------------------------------------------------------------------
+mAP@0.5:      0.7627 (76.27%)
+mAP@0.5:0.95: 0.4905 (49.05%)
+Precision:    0.8062 (80.62%)
+Recall:       0.6299 (62.99%)
+
