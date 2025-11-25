@@ -1,0 +1,52 @@
+
+KENAPA LABEL TIDAK PERLU DI-RESIZE MESKIPUN GAMBAR DI-RESIZE?
+=============================================================
+
+FORMAT LABEL YOLO:
+------------------
+Setiap file .txt berisi:
+  <class_id> <x_center> <y_center> <width> <height>
+
+Dimana:
+  - class_id: nomor class (contoh: 0 untuk pothole)
+  - x_center, y_center: center koordinat dalam range [0, 1] (NORMALIZED)
+  - width, height: lebar dan tinggi box dalam range [0, 1] (NORMALIZED)
+
+EXAMPLE:
+  0 0.5 0.5 0.2 0.3
+  Artinya: class 0, center di tengah image (0.5, 0.5), 
+           box width 20% dari image width, height 30% dari image height
+
+MENGAPA NORMALIZED COORDINATES?
+--------------------------------
+1. SCALE-INVARIANT:
+   - Koordinat tidak bergantung pada ukuran asli gambar
+   - Gambar 400x300, 640x480, atau 1920x1440 semua punya label yang sama
+   - Satu label dapat digunakan untuk berbagai ukuran gambar
+
+2. JANGAN PERLU DI-RESIZE:
+   - Label tetap valid terlepas dari ukuran gambar
+   - Tidak perlu recalculate bbox coordinates
+   - Hemat waktu processing
+
+3. UNIVERSAL:
+   - YOLO menggunakan normalized coordinates secara internal
+   - Otomatis handle berbagai ukuran input image
+
+CONTOH KASUS ANDA:
+------------------
+Original image: 800x600
+Label original: 0 0.5 0.5 0.2 0.3
+
+Setelah resize ke 640x640:
+Label tetap: 0 0.5 0.5 0.2 0.3 (SAMA!)
+
+Mengapa?
+- Normalized coordinates = image-agnostic
+- Bbox position di center image tetap 50% x 50%
+- Bbox size 20% x 30% dari image tetap sama
+
+KESIMPULAN:
+-----------
+COPY LABEL SAJA, JANGAN UBAH ISINYA!
+Hanya gambar yang di-resize, label file bisa di-copy as-is.
