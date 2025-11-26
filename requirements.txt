@@ -1,6 +1,6 @@
 # Core dependencies untuk YOLO dan computer vision
 ultralytics>=8.0.0
-opencv-python>=4.8.0
+opencv-python\
 numpy>=1.24.0
 torch>=2.0.0
 torchvision>=0.15.0
