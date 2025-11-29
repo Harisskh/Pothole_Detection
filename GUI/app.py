@@ -7,14 +7,14 @@ import time
 import io
 import pandas as pd
 
-# ========== PAGE CONFIGURATION ==========
+# Konfigurasi halaman
 st.set_page_config(
     page_title="Sistem Deteksi Lubang Jalan",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# ========== CUSTOM CSS - PROFESSIONAL DESIGN WITH BLACK BACKGROUND ==========
+# Style GUI
 st.markdown("""
     <style>
     /* Root colors */
@@ -254,7 +254,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# ========== HEADER ==========
+# Header
 st.markdown("""
     <div class="header-container">
         <h1>Sistem Deteksi Lubang Jalan</h1>
@@ -262,7 +262,7 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-# ========== LOAD MODEL ==========
+# Load Model
 @st.cache_resource
 def load_model():
     """Load YOLO model dengan caching"""
@@ -275,7 +275,7 @@ def load_model():
 
 model = load_model()
 
-# ========== SIDEBAR CONFIGURATION ==========
+# Side bar
 with st.sidebar:
     st.markdown('<div class="sidebar-card"><h3>Pengaturan Deteksi</h3>', unsafe_allow_html=True)
     
@@ -314,7 +314,7 @@ with st.sidebar:
     """)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# ========== MAIN CONTENT ==========
+# Halaman utama
 st.markdown("---")
 
 # Upload section
@@ -340,7 +340,7 @@ with col2:
     Min Resolusi: 320x320
     """)
 
-# ========== DETECTION PROCESS ==========
+# Proses deteksi
 if uploaded_file is not None:
     st.markdown("---")
     
@@ -381,7 +381,7 @@ if uploaded_file is not None:
     if reset_button:
         st.rerun()
     
-    # ========== DETECTION & RESULTS ==========
+    # Hasil deteksi
     if detect_button:
         # Convert image to OpenCV format
         img_array = np.array(image)
@@ -488,20 +488,20 @@ if uploaded_file is not None:
             # Download report
             with col_down2:
                 report = f"""LAPORAN DETEKSI LUBANG JALAN
-=============================
-Tanggal: {time.strftime('%Y-%m-%d %H:%M:%S')}
-Model: YOLOv8
+                    =============================
+                    Tanggal: {time.strftime('%Y-%m-%d %H:%M:%S')}
+                    Model: YOLOv8
 
-RINGKASAN:
-----------
-Total Lubang Terdeteksi: {len(detections)}
-Treshold: {conf_threshold}
-Waktu Pemrosesan: {inference_time:.3f} detik
-Rata-rata Akurasi: {np.mean([d['Confidence'] for d in detections]):.1%}
+                    RINGKASAN:
+                    ----------
+                    Total Lubang Terdeteksi: {len(detections)}
+                    Treshold: {conf_threshold}
+                    Waktu Pemrosesan: {inference_time:.3f} detik
+                    Rata-rata Akurasi: {np.mean([d['Confidence'] for d in detections]):.1%}
 
-DETAIL LUBANG:
----------------
-"""
+                    DETAIL LUBANG:
+                    ---------------
+                    """
                 for det in detections:
                     report += f"\nLubang #{det['No']}:\n"
                     report += f"  Akurasi: {det['Confidence']:.1%}\n"
